@@ -13,7 +13,7 @@ struct HeroesListView: View {
         var body: some View {
                 NavigationView {
                     VStack(alignment: .center,spacing: 0) {
-                        FavoriteHeroesView(favoritesViewModel: .init())
+                        FavoriteHeroesView(favoritesViewModel: .init()).padding(.leading, 4)
                         LoadingView(isShowing: .constant(self.heroesListViewModel.isLoading), title: "") {
                             
                             List(self.heroesListViewModel.heroes, id: \.id) { hero in

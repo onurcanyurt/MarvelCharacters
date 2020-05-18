@@ -152,6 +152,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE2DDDD324727D4E008556C4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEE75C1A24724313000845B3 /* MarvelAPI.h */,
+				AEE75C1B24724313000845B3 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		AEE75BF3247242BC000845B3 = {
 			isa = PBXGroup;
 			children = (
@@ -198,11 +207,10 @@
 		AEE75C1924724313000845B3 /* MarvelAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AE2DDDD324727D4E008556C4 /* SupportingFiles */,
 				AEE75C6D2472435D000845B3 /* DTOs */,
 				AEE75C6B2472435D000845B3 /* MarvelAPI.swift */,
 				AEE75C6C2472435D000845B3 /* MarvelError.swift */,
-				AEE75C1A24724313000845B3 /* MarvelAPI.h */,
-				AEE75C1B24724313000845B3 /* Info.plist */,
 			);
 			path = MarvelAPI;
 			sourceTree = "<group>";
@@ -770,7 +778,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MarvelAPI/Info.plist;
+				INFOPLIST_FILE = MarvelAPI/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -800,7 +808,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MarvelAPI/Info.plist;
+				INFOPLIST_FILE = MarvelAPI/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

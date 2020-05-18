@@ -18,8 +18,6 @@ public protocol MarvelFetchable {
   func fetch(offset: Int) -> AnyPublisher<[Character], MarvelError>
 }
 
-
-
 // MARK: - MarvelAPI
 
 public class MarvelAPI {

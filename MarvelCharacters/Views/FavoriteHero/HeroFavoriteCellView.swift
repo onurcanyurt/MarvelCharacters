@@ -19,7 +19,6 @@ struct HeroFavoriteCellView: View {
         NavigationLink(destination: HeroDetailsView(heroDetailsViewModel: .init(hero: self.hero))) {
             VStack(alignment: .leading, spacing: 8) {
                 
-                Spacer().frame(height: 3)
                 
                 HeroImageView(withThumbnail: self.hero.thumbnail,
                               width: Double(self.screenBound.width) * 0.2,
@@ -28,7 +27,7 @@ struct HeroFavoriteCellView: View {
                 
                 Text(self.hero.formatedName()[0])
                     .font(.system(size: 13, weight: .bold, design: .default))
-                    .frame(width: self.screenBound.width * 0.22, height: self.screenBound.height * 0.06, alignment: .top)
+                    .frame(width: self.screenBound.width * 0.22, height: self.screenBound.height * 0.055, alignment: .top)
                     .multilineTextAlignment(.center)
             }
         }.buttonStyle(PlainButtonStyle())

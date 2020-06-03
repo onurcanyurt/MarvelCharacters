@@ -18,7 +18,6 @@ class FavoritesViewModel: ObservableObject {
                       name: NSNotification.UpdateFavList,object: nil)
     }
     
-    //observerda da kullanilacagi icin @objc sekline yaptik
     @objc func fetchFavorites() {
        UserDefaultsService.shared.loadHeroes { heroes in
            self.heroes = heroes

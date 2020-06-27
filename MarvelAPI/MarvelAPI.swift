@@ -62,8 +62,8 @@ extension MarvelAPI: MarvelFetchable {
              static let scheme = "https"
              static let host = "gateway.marvel.com"
              static let path = "/v1/public"
-             static let publicKey = "d15e60bdeba26495261713412a157a0a"
-             static let privateKey = "c804c09a7cb570733264cd458266bda45452ea21"
+             static let publicKey = "addYourKey"
+             static let privateKey = "addYourKey"
              static let ts = Date().timeIntervalSince1970.description
              static let hash = "\(ts)\(privateKey)\(publicKey)".md5()
              static let limit = 30

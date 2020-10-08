@@ -32,7 +32,8 @@ class HeroDetailsViewModel: ObservableObject {
         
         self.isFavorite = !self.isFavorite
         
-        UserDefaultsService.shared.loadHeroes { heroes in
+        UserDefaultsService.shared.loadHeroes { [weak self] heroes in
+            guard let self = self else { return }
             if heroes.contains(self.hero) {
                 UserDefaultsService.shared.removeHero(heroToRemove: self.hero)
             } else {

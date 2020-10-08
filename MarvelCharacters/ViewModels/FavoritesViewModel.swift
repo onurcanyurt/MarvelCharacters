@@ -19,8 +19,8 @@ class FavoritesViewModel: ObservableObject {
     }
     
     @objc func fetchFavorites() {
-       UserDefaultsService.shared.loadHeroes { heroes in
-           self.heroes = heroes
+       UserDefaultsService.shared.loadHeroes {  [weak self] heroes in
+           self?.heroes = heroes
        }
     }
     
